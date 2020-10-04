@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_restful import Api
-# from resources.routes import initialize_routes
 from database.db import initialize_db
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager
@@ -24,5 +23,3 @@ MONGODB_SETTINGS = {
 initialize_db(app)
 
 initialize_routes(api)
-
-# app.run()
